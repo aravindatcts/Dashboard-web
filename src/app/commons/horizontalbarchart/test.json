@@ -1,0 +1,876 @@
+// {
+//     //  "slametrics": {
+//     //                 "date": "2017-12-04T14:00:47.176Z",
+//     //                 "month_ind": false,
+//     //                 "lob_name": "Combined",
+//     //                 "sla_reasons": [
+//     //                     "string"
+//     //                 ],
+//     //    "id": "5a2556350b8e9d1eac7030a2",
+//                     "slalList": [
+//                         {
+//                         "slaname": "First Pass Rate",
+//                         "slagoal": 89,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Group First Pass Rate",
+//                         "slagoal": 99,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Member First Pass Rate",
+//                         "slagoal": 99,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Late Fees",
+//                         "slagoal": 79,
+//                         "slaachieved": 88,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Provider/Network Admin",
+//                         "slagoal": 49,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Authorization Claim Matching",
+//                         "slagoal": 89,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Last Minute Benefit",
+//                         "slagoal": 69,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         },
+//                         {
+//                         "slaname": "Authorization First Pass Rate",
+//                         "slagoal": 69,
+//                         "slaachieved": 98,
+//                         "sla_reasons": [
+//                             "Reason 1",
+//                             "Reason 2",
+//                             "Reason 3"
+//                         ],
+//                         "_slacomments": [
+//                             {
+//                             "userid": "Aravind",
+//                             "updatedDate": "2017-12-04T14:00:47.176Z",
+//                             "comment": "No comments"
+//                             }
+//                         ]
+//                         }
+//                     ]
+//      }
+
+
+
+{
+  "slametrics": [
+    {
+      "date": "2017-12-02T14:44:28.450Z",
+      "month_ind": false,
+      "lob_name": "string",
+      "id": "5a265f95bc50ca2a6c7e9f9d",
+      "slalList": [
+        {
+          "slaname": "First Pass Rate",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+ 
+              "comment": "No comments"
+            }
+          ]
+        },
+          {
+          "slaname": "Group First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Member First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Late Fees",
+          "slagoal": 79,
+          "slaachieved": 88,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Provider/Network Admin",
+          "slagoal": 49,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization Claim Matching",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Last Minute Benefit",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization First Pass Rate",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2017-12-01T14:44:28.450Z",
+      "month_ind": false,
+      "lob_name": "string",
+      "id": "5a265f99bc50ca2a6c7e9f9e",
+      "slalList": [
+        {
+          "slaname": "First Pass Rate",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Group First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Member First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Late Fees",
+          "slagoal": 79,
+          "slaachieved": 88,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Provider/Network Admin",
+          "slagoal": 49,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization Claim Matching",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Last Minute Benefit",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization First Pass Rate",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2017-11-30T14:44:28.450Z",
+      "month_ind": false,
+      "lob_name": "string",
+      "id": "5a265fa2bc50ca2a6c7e9f9f",
+      "slalList": [
+        {
+          "slaname": "First Pass Rate",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Group First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Member First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Late Fees",
+          "slagoal": 79,
+          "slaachieved": 88,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Provider/Network Admin",
+          "slagoal": 49,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization Claim Matching",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Last Minute Benefit",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization First Pass Rate",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2017-11-29T14:44:28.450Z",
+      "month_ind": false,
+      "lob_name": "string",
+      "id": "5a265fc3bc50ca2a6c7e9fa8",
+      "slalList": [
+        {
+          "slaname": "First Pass Rate",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Group First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Member First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Late Fees",
+          "slagoal": 79,
+          "slaachieved": 88,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Provider/Network Admin",
+          "slagoal": 49,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization Claim Matching",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Last Minute Benefit",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization First Pass Rate",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2017-11-28T14:44:28.450Z",
+      "month_ind": false,
+      "lob_name": "string",
+      "id": "5a265fbfbc50ca2a6c7e9fa7",
+      "slalList": [
+        {
+          "slaname": "First Pass Rate",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Group First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Member First Pass Rate",
+          "slagoal": 99,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Late Fees",
+          "slagoal": 79,
+          "slaachieved": 88,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Provider/Network Admin",
+          "slagoal": 49,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization Claim Matching",
+          "slagoal": 89,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Last Minute Benefit",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        },
+        {
+          "slaname": "Authorization First Pass Rate",
+          "slagoal": 69,
+          "slaachieved": 98,
+          "sla_reasons": [
+            "Reason 1",
+            "Reason 2",
+            "Reason 3"
+          ],
+          "_slacomments": [
+            {
+              "userid": "Aravind",
+              "updatedDate": "2017-12-04T14:00:47.176Z",
+              "comment": "No comments"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

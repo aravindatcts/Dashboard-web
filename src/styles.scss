@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss";
+@import "../node_modules/material-design-lite/material.css";
+@import '../node_modules/@angular-mdl/datepicker/datepicker';
+@import "../node_modules/@angular-mdl/core/scss/_variables";
+@import "~@angular-mdl/popover/popover";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./assets/custom/scss/custom.scss";
+
+// ::-webkit-scrollbar { 
+//     display: none; 
+// }
+

@@ -1,0 +1,162 @@
+<div style="">
+<p style="text-transform: uppercase;">{{combinedName}}<p>
+</div>
+
+
+<div class="mdl-grid" style="display: inline; overflow: auto;">
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet" style="display: inline-table;" *ngFor="let card of slaData;let j = index">
+
+    <div class="card-container1 manual-flip card-flip">
+      <div class="card1">
+        <div class="front">
+
+
+          <mdl-card mdl-shadow="4" *ngFor="let inside of card;">
+            <mdl-card-supporting-text style="text-transform: uppercase;">
+              {{lobName[j]}}
+            </mdl-card-supporting-text>
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--9-col">
+                <guage-chart [slaGoal]="inside.slagoal" [slaAchieved]="inside.slaachieved">Loading...</guage-chart>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col">
+
+                
+
+              <!--<canvas [id]="card.slaname" width="200" height="120"></canvas>-->
+                <chart-bar [slaname]="inside.slaname"> </chart-bar>
+              </div>
+            </div>
+            <!--<mdl-card-actions mdl-card-border>
+      <button mdl-button mdl-colored mdl-ripple>Get Started</button>
+    </mdl-card-actions>-->
+            <mdl-card-menu *ngIf="card.sla_reasons!='Null'">
+              <span matTooltip="Comments!">    <button mdl-button mdl-button-type="icon" mdl-ripple (click)="toggleComment()" onclick="rotateCard(this)">
+        <i class="material-icons">info_outline</i>
+      </button>
+            </span>
+
+            <span matTooltip="Reasons!">    <button mdl-button mdl-button-type="icon" mdl-ripple (click)="toggleReason()" onclick="rotateCard(this)">
+        <i class="material-icons">help_outline</i>
+      </button>
+            </span>
+            </mdl-card-menu>
+          </mdl-card>
+          
+        </div>
+
+
+        <div class="back" [hidden]="commentSection">
+          <mdl-card mdl-shadow="4">
+            <div style="margin: 30px 10px 10px 30px;">
+              <h6 style="color:#fff; text-align: center">COMMENTS</h6>
+            <div class="header"  *ngFor="let comments of card.sla_reasons; let i = index">
+              <p class="text-design">{{i+1}}. {{comments}}
+               
+              </p>
+            </div>
+            </div>
+
+            
+<!--
+            <mat-vertical-stepper>
+              <mat-step label="Aravind" completed="false">
+                Comments
+              </mat-step>
+              <mat-step label="Ashik" completed="false">
+                You signed out of your account
+                It's a good idea to close all browser windows.
+              </mat-step>
+              <mat-step label="Annamalai" completed="false">
+                Comments 3
+              </mat-step>
+              <mat-step label="Shan" completed="false">
+                Comments 4
+              </mat-step>
+              <mat-step label="Radhika" completed="false">
+                Comments 5
+              </mat-step>
+            </mat-vertical-stepper>-->
+
+                <center style="line-height: 3rem;">
+                    <a mat-mini-fab onclick="rotateCard(this)" >
+                      <mat-icon>check</mat-icon>
+                    </a>
+                </center>
+
+
+<!--
+            <mdl-card-menu>
+              <span mdTooltip="Edit" mdTooltipPosition="above">   <button mdl-button mdl-button-type="icon" mdl-ripple onclick="rotateCard(this)">
+                            <i class="material-icons md-18">create</i>
+                          </button>
+                       </span>
+            </mdl-card-menu>-->
+
+          </mdl-card>
+        </div>
+
+
+
+        <div class="back" [hidden]="reasonSection">
+          <mdl-card mdl-shadow="4">
+
+
+
+<!--            
+            <div style="margin: 30px 10px 10px 30px;">
+              <h6 style="color:#fff; text-align: center">COMMENTS</h6>
+            <div class="header"  *ngFor="let comments of card.sla_reasons; let i = index">
+              <p class="text-design">{{i+1}}. {{comments}}
+               
+              </p>
+            </div>
+            </div>-->
+
+            
+
+            <mat-vertical-stepper>
+              <mat-step label="Aravind" completed="false">
+                Comments
+              </mat-step>
+              <mat-step label="Ashik" completed="false">
+                You signed out of your account
+                It's a good idea to close all browser windows.
+              </mat-step>
+              <mat-step label="Annamalai" completed="false">
+                Comments 3
+              </mat-step>
+              <mat-step label="Shan" completed="false">
+                Comments 4
+              </mat-step>
+              <mat-step label="Radhika" completed="false">
+                Comments 5
+              </mat-step>
+            </mat-vertical-stepper>
+
+                <center style="line-height: 3rem;">
+                    <a mat-mini-fab onclick="rotateCard(this)" >
+                      <mat-icon>check</mat-icon>
+                    </a>
+                </center>
+
+
+<!--
+            <mdl-card-menu>
+              <span mdTooltip="Edit" mdTooltipPosition="above">   <button mdl-button mdl-button-type="icon" mdl-ripple onclick="rotateCard(this)">
+                            <i class="material-icons md-18">create</i>
+                          </button>
+                       </span>
+            </mdl-card-menu>-->
+
+          </mdl-card>
+        </div>
+
+         
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

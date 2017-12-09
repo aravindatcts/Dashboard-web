@@ -1,0 +1,81 @@
+<div class="animated fadeIn">
+
+  <div class="mdl-grid" style="height: 80px">
+
+    <div class="mdl-cell mdl-cell--4-col">
+      <h5 class="dashboard animated flipInX" *ngIf='value==null'> Dashboard Status</h5>
+      <h5 class="dashboard animated flipInX"> Dashboard Status -
+        <span class="animated fadeIn" *ngIf='value=="month"'> {{ months? (months | date:'MMMM yyyy'): ( todayDate | date:'MMMM yyyy' ) }} </span>
+        <span class="animated fadeIn" *ngIf='value=="day"'> {{ days? (days | date:'dd MMMM yyyy'): ( todayDate | date:'dd MMMM yyyy') }}  </span>
+      </h5>
+    </div>
+
+<div class="mdl-cell mdl-cell--8-col" style="color:#fff">
+  
+    <h6 class="dashboard1">
+       <em style="padding-right:2rem;">Showing:</em>
+      <mat-form-field>  
+        <mat-select placeholder="LOB Wise View" style="padding-right:2rem" [(ngModel)]="lobview">
+          <mat-option *ngFor="let l of lob" [value]="l.id">{{l.name}}</mat-option>
+        </mat-select>  
+      </mat-form-field>
+
+         
+                 
+       <mat-radio-group style="padding-left:1rem; margin:1rem;" [(ngModel)]="value">  <em>  in </em>
+
+          <mat-form-field [hidden]="false" class="datefield">
+          <input matInput [matDatepicker]="pickerMonth" [hidden]="true" [(ngModel)]="months" [matDatepickerFilter]="myFilter">
+          <mat-datepicker #pickerMonth  startView="year" [startAt]="startDate"  (selectedChanged)="monthView($event)"></mat-datepicker>
+
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" [hidden]="true" [(ngModel)]="days" [matDatepickerFilter]="myFilter">
+          <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-radio-button value="month" (click)="pickerMonth.open()" style="padding-left:2rem"  mdl-ripple>Month View</mat-radio-button>
+                          
+                                 
+                          
+          <mat-radio-button value="day" (click)="picker.open()" style="padding-left:2rem" mdl-ripple>Day View</mat-radio-button>
+                       
+                            
+                          
+        </mat-radio-group>  
+
+        
+
+      
+          
+    </h6>
+ 
+</div>
+
+                <!--Date Picker-->
+                <!--<div class="mdl-cell mdl-cell--4-col">-->
+                    <!--<h5 class="dashboard animated flipInX" *ngIf=typeView>
+                            <button mdl-button (click)="pickADate($event)" mdl-button-type="icon" mdl-ripple>
+                                        <mdl-icon>event</mdl-icon>    
+                             </button> Pick a Date <span> - {{ selectedDate?.format('LL') }}</span>
+                    </h5>-->
+<!--
+
+<mdl-select label="{{lobName}}" floating-label [(ngModel)]="autoselectCountryCode" align="left">
+  <mdl-option *ngFor="let l of lob" [value]="l.id">{{l.name}}</mdl-option>
+</mdl-select>-->
+
+
+                <!--</div>-->
+                
+                                  
+              </div> 
+        <hr>
+        <!--Bar-Charts-Horizontal-Cards-->
+<div class="container">
+        <chart-horizontal [content]="slaMetrics"> </chart-horizontal> 
+            <hr class="style-two">
+        <line-dashboard> </line-dashboard>
+        <!--<dashtable-chart> </dashtable-chart>-->
+</div>
+      
+
+</div>

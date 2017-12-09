@@ -1,0 +1,68 @@
+.img-avatar
+{
+    height: 30px;
+    width: 150px;
+}
+.mdl-layout1
+{
+    
+  position: relative;
+  flex-direction: row;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  background-color: #323b44;
+  border-bottom: 1px solid #323b44; 
+}
+
+.icon-pos
+{
+    padding-right: 2.4rem;
+    padding-bottom: 2rem;
+}
+
+.mdlMenu
+{
+    top: 55px;
+}
+
+.mdl-list {
+    display: block;
+    //padding: 8px 0;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.mdl-badge[data-badge]:after {
+    
+    background: rgb(3, 169, 244);
+    color: rgb(255,255,255);
+}
+.mdl-menu__item--full-bleed-divider {
+    border-bottom: 1px solid rgb(7, 155, 222);
+}
+
+
+.mat-menu-panel {
+    background: #323b44 !important;
+}
+
+.mat-menu-item .mat-icon, .mat-menu-item-submenu-trigger::after {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px !important;
+}
+
+.mat-menu-item[disabled] {
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    
+    padding: 16px 25px !important;
+    
+}
+
+.mdl-mini-footer {
+    padding: 2px 6px;
+    background-image: linear-gradient(141deg, #323b44 0%, #2d353d 50%, rgb(50, 59, 68) 0%);
+}

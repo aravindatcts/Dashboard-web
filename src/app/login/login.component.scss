@@ -1,0 +1,202 @@
+//  .col-sm-6 {
+//     width: 50%; }
+//     .col-lg-4 {
+//     width: 33.33333%; }
+
+    .mdl-card{
+        width: 340px;
+        height: 220px;
+    }
+
+    .mdl-grid{
+        padding: 0px;
+    }
+
+    .mdl-card__supporting-text {
+    color: rgba(255,255,255, 1);
+    padding-top: 0px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    
+    }
+
+    .mdl-card_text-goal {
+            color: rgba(255,255,255, 1);
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    }
+
+    .mdl-cell--6-col
+    {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+
+    }
+
+    .mdl-cell--9-col
+    {
+        height: 150px;
+        width: 105px;
+        display: inline-block;
+
+    }
+    .text-success
+    {
+        font-size: 12px;
+        color: rgba(255,255,255, 1);
+    }
+
+    .mdl-card1
+    {
+        display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 200px;
+  overflow: hidden;
+  width: 830px;
+  height: 430px;
+  z-index: 1;
+  position: relative;
+  background: rgb(50,59,68);
+  border-radius: 2px;
+  box-sizing: border-box; 
+    }
+    
+    .current {
+  position: absolute;
+  color: #bbb;
+  font-weight: 500;
+  line-height: 0;
+}
+
+
+.container {
+    @media (min-width: 768px){
+        // width: 100%;
+    max-width: 100%;
+    }
+}
+
+
+/* flip the pane when hovered */
+.card-container1:not(.manual-flip):hover .card1,
+.card-container1.hover.manual-flip .card1{
+	-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+ -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+.card-container1.static:hover .card1,
+.card-container1.static.hover .card1 {
+	-webkit-transform: none;
+-moz-transform: none;
+ -o-transform: none;
+    transform: none;
+}
+/* flip speed goes here */
+.card1 {
+	 -webkit-transition: -webkit-transform .5s;
+   -moz-transition: -moz-transform .5s;
+     -o-transition: -o-transform .5s;
+        transition: transform .5s;
+-webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+     -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+	position: absolute;
+	
+	// background-color: #FFF;
+    // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+		-webkit-transform: rotateY( 180deg );
+   -moz-transform: rotateY( 180deg );
+     -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        z-index: 3;
+}
+
+.back .btn-simple{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+
+.text-design{
+    text-align: center;
+vertical-align: middle;
+// lin
+padding-top: 80px;
+color: #fff
+}
+
+.mdl-button--icon {
+color: #fff;
+}
+
+hr.style-two {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(50, 59, 68, 0.95), rgba(0, 0, 0, 0));
+}
+
+.card-flip{
+    width: 340px;
+        height: 220px;
+
+}
+
+.mdl-button .material-icons {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.card2{
+    margin: 100px auto;
+    height: 450px;
+    width: 500px;
+    background: #2D353D
+}
+.form-group{
+    margin-left: 20px;
+}
+
+// a, area, button, input, label, select, summary, textarea {
+//     color: #697077 !important;
+// }
+.mdl-textfield__label  {
+    color: #fff !important;
+}

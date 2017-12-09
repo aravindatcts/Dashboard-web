@@ -1,0 +1,112 @@
+<div class="demo-container">
+   <mdl-layout mdl-layout-fixed-header mdl-layout-fixed-drawer>
+      <mdl-layout-header mdl-shadow="8" style="
+    background-image: linear-gradient(141deg, #323b44 0%, #2d353d 71%, rgb(50, 59, 68) 0%);
+    ">
+         <mdl-layout-header-row>
+            <!--<mdl-layout-title>
+                <img src="/assets/images/logo.png" class="img-avatar" alt="WellMark">  
+                </mdl-layout-title>-->
+            <!--<mdl-layout-spacer></mdl-layout-spacer>-->
+            <!-- Navigation. We hide it in small screens. -->
+            <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
+               <a class="mdl-navigation__link" [routerLink]="['/home']" >Dashboard</a>
+               <a class="mdl-navigation__link" >User</a>
+               <a class="mdl-navigation__link" >Settings</a>
+            </nav> -->
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <a class="mdl-navigation__link" >
+              <i class="material-icons mdl-list__item-icon icon-pos mdl-list__item-avatar" mdl-badge="2" mdl-badge-overlap>person</i> 
+              <!-- <button mdl-button #btn1="mdlButton" (click)="m1.toggle($event, btn1)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button> -->
+              <button mat-icon-button [matMenuTriggerFor]="menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+            </a>
+
+
+                        <!-- <mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-right">
+                                   <mdl-menu-item mdl-ripple mdl-menu-item-full-bleed-divider>Settings</mdl-menu-item>
+                                   <mdl-menu-item mdl-ripple>Change Password</mdl-menu-item>
+                                   <mdl-menu-item mdl-ripple [routerLink]="['/login']">Logout</mdl-menu-item>
+                            <!--<mdl-menu-item mdl-ripple disabled>Disabled Action</mdl-menu-item>
+                                <mdl-menu-item>Yet Another Action</mdl-menu-item>-->
+                        <!-- </mdl-menu> --> 
+
+                        
+                          <mat-menu #menu="matMenu" [overlapTrigger]="false" yPosition="below">
+                            <button mat-menu-item style="border-bottom: 1px solid #099adc;" [routerLink]="['settings']">
+                              <mat-icon>settings</mat-icon>
+                              <span>Settings</span>
+                            </button>
+                            <button mat-menu-item disabled>
+                              <mat-icon>https</mat-icon>
+                              <span>Change Password</span>
+                            </button>
+                            <button mat-menu-item [routerLink]="['/login']">
+                              <mat-icon>exit_to_app</mat-icon>
+                              <span>Logout</span>
+                            </button>
+                          </mat-menu>
+
+
+
+
+
+         </mdl-layout-header-row>
+      </mdl-layout-header>
+      <mdl-layout-drawer mdl-shadow="8">
+         <mdl-layout-title><img src="/assets/images/logo.png" class="img-avatar" alt="WellMark"></mdl-layout-title>
+         <nav class="mdl-navigation fixed">
+            <a class="mdl-navigation__link" [routerLink]="['/home']" ><i class="material-icons mdl-list__item-icon icon-pos">dashboard</i>Dashboard</a>
+            <div><a class="mdl-navigation__link"  (click)='toggleClaims()'><i class="material-icons mdl-list__item-icon icon-pos">note_add</i>Claims</a>
+                                     <div align="left"> <mdl-list class="animated flipInX" *ngIf='expandClaims'>
+                                               <a class="mdl-navigation__link" [routerLink]="['claims/firstpassrate']">First Pass Rate</a>
+                                               <a class="mdl-navigation__link" [routerLink]="['claims/trendinginventory']">Trending Inventory</a>
+                                      </mdl-list> </div>
+            </div>  
+            
+            
+            <a class="mdl-navigation__link" [routerLink]="['member']" ><i class="material-icons mdl-list__item-icon icon-pos">group</i>Member</a>
+            <a class="mdl-navigation__link" ><i class="material-icons mdl-list__item-icon icon-pos">verified_user</i>Provider</a>
+            <a class="mdl-navigation__link" ><i class="material-icons mdl-list__item-icon icon-pos">receipt</i>Billing</a>
+            <a class="mdl-navigation__link" ><i class="material-icons mdl-list__item-icon icon-pos">whatshot</i>Utilization Management</a>
+            <a class="mdl-navigation__link" ><i class="material-icons mdl-list__item-icon icon-pos">layers</i>Batch</a>
+         </nav>
+      </mdl-layout-drawer>
+      <mdl-layout-content>
+      
+         <router-outlet></router-outlet>
+    
+
+
+<footer class="mdl-mini-footer" mdl-shadow="8">
+  <div class="mdl-mini-footer__left-section">
+    
+      <a href="http://wellmark.com" target="_blank">WellMark</a> ©
+    
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    Powered by <a href="http://cognizant.com" target="_blank">Cognizant</a>
+  </div>
+</footer>
+
+
+
+</mdl-layout-content>
+
+
+   </mdl-layout>
+ 
+ 
+
+
+</div>
+
+
+
+
+
+
+
+
+

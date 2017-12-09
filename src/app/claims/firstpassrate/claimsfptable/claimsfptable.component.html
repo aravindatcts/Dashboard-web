@@ -1,0 +1,98 @@
+<div class="card-box card" mdl-shadow="8">
+                        <div class="card-block">
+                            <h4 class="text-dark  header-title m-t-0 m-b-30">Claims Ageing - By Market Segment</h4>
+                            
+                              <!--  <div class="col-sm-5">
+                                    <h4 class="card-title mb-0">Traffic</h4>
+                                    <div class="small text-muted">November 2015</div>
+                                </div> -->
+                                
+                                <table class="mdl-data-table mdl-js-data-table" mdl-shadow="8" *ngIf= 'tableContents && tableContents.length'>
+                                        <thead class="thead-inverse">
+                                            <tr> <th class="text-center" colspan="9"> Values</th> </tr>
+                                            <tr>
+                                                <th class="text-center"> Year</th>
+                                                <th class="text-center">Month</th>
+                                                <th class="text-center">Date</th>
+                                                <th class="text-center">Market Segment</th>
+                                                <th class="text-center">Total Receipts</th>
+                                                <th class="text-center">XC Claims</th>
+                                                <th class="text-center">Workflow</th>
+                                                <th class="text-center">First Pass</th>
+                                                <th class="text-center">% First Pass</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                                <tr>
+                                                                    <td class="text-center">2016</td>
+                                                                    <td class="text-center">May</td>
+                                                                    <td class="text-center">03/05/2016</td>
+                                                                    <td class="text-center">IND</td>
+                                                                    <td class="text-center">1,023</td>
+                                                                    <td class="text-center">692</td>
+                                                                    <td class="text-center">131</td>
+                                                                    <td class="text-center">892</td>
+                                                                    <td class="text-center">87.19%</td>
+                                                                </tr>  
+
+                                                                <tr>
+                                                                    <td class="text-center">2016</td>
+                                                                    <td class="text-center">June</td>
+                                                                    <td class="text-center">01/06/2016</td>
+                                                                    <td class="text-center">FI-LG/SG</td>
+                                                                    <td class="text-center">6,768</td>
+                                                                    <td class="text-center">-</td>
+                                                                    <td class="text-center">609</td>
+                                                                    <td class="text-center">6,159</td>
+                                                                    <td class="text-center">91%</td>  
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="text-center">2016</td>
+                                                                    <td class="text-center">April</td>
+                                                                    <td class="text-center">03/04/2016</td>
+                                                                    <td class="text-center">OTH</td>
+                                                                    <td class="text-center">449</td>
+                                                                    <td class="text-center">22</td>
+                                                                    <td class="text-center">21</td>
+                                                                    <td class="text-center">11</td>
+                                                                    <td class="text-center">2.45%</td>  
+                                                                </tr>   
+
+                                                                <tr>
+                                                                    <td class="text-center">2016</td>
+                                                                    <td class="text-center">May</td>
+                                                                    <td class="text-center">03/05/2016</td>
+                                                                    <td class="text-center">MedSupp</td>
+                                                                    <td class="text-center">23,960</td>
+                                                                    <td class="text-center">395</td>
+                                                                    <td class="text-center">1,094</td>
+                                                                    <td class="text-center">22,174</td>
+                                                                    <td class="text-center">92.55%</td>  
+                                                                </tr> 
+
+                                                                <tr>
+                                                                    <td class="text-center">2016</td>
+                                                                    <td class="text-center">May</td>
+                                                                    <td class="text-center">03/05/2016</td>
+                                                                    <td class="text-center">SF</td>
+                                                                    <td class="text-center">91</td>
+                                                                    <td class="text-center">-</td>
+                                                                    <td class="text-center">91</td>
+                                                                    <td class="text-center">-</td>
+                                                                    <td class="text-center">0.00%</td>  
+                                                                </tr>
+                                        </tbody>
+                                    </table>
+                                        <mat-paginator [length]="100"
+                                                    [pageSize]="10"
+                                                    [pageSizeOptions]="[5, 10, 25, 100]">
+                                        </mat-paginator>
+                                
+                                <!--/.col-->
+                                
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                        </div>
+                    

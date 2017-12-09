@@ -1,0 +1,133 @@
+.chart-wrapper canvas {
+  width: 100% !important;
+  }
+
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header
+{
+    color: #fff;
+    padding-top: 0rem;
+    padding-right: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+    font-size: 18px;
+    
+}
+
+.demo-card-square.mdl-card {
+  width: 820px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #323b44;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  display: flex;
+    flex-direction: column;
+}
+
+.card-box {
+  padding: 20px;
+/*  border: 1px solid rgba(255, 255, 255, 0.07);*/
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  margin: 20px;
+  background-color: #323b44;
+}
+
+.card-block {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  //   background-color: #eceff1;
+  /*  border-top: 1px solid #cfd8dc; */
+}
+
+
+.progress {
+  position: relative;
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: #acece6;
+  border-radius: 2px;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important; }
+
+.progress-xs {
+  height: 4px;
+}
+
+.card-footer ul {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  table-layout: fixed;
+}
+
+.card-footer ul li {
+  display: table-cell;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.m-b-30 {
+  margin-bottom: 30px !important;
+}
+
+.m-t-0 {
+  margin-top: 0px;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.text-muted{
+  color: #fff !important;
+}
+.strong
+{
+  color: rgba(255, 255, 255, 0.5)
+}

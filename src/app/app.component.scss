@@ -1,0 +1,40 @@
+.img-avatar
+{
+    height: 30px;
+    width: 150px;
+}
+.mdl-layout1
+{
+    
+  position: relative;
+  flex-direction: row;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  background-color: #323b44;
+  border-bottom: 1px solid #323b44; 
+}
+
+.icon-pos
+{
+    padding-right: 2.4rem;
+    padding-bottom: 2rem;
+}
+
+.mdlMenu
+{
+    top: 55px;
+}
+
+.mdl-list {
+    display: block;
+    //padding: 8px 0;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.mdl-badge[data-badge]:after {
+    
+    background: rgb(3, 169, 244);
+    color: rgb(255,255,255);
+}

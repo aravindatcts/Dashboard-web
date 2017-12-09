@@ -1,0 +1,26 @@
+.header
+{
+    color: #fff;
+    padding-top: 0rem;
+    padding-right: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+    font-size: 22px !important;
+    
+}
+
+
+
+.mat-card {
+  position: relative;
+  margin: 0.5rem 10px 2rem 30px;
+  background-color: #323b44;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  display: flex;
+    flex-direction: column;
+    width: 100%;
+}

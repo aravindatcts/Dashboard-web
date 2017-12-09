@@ -1,0 +1,21 @@
+<div class="current" [ngStyle]="getOverlayStyle()">{{slaAchieved}}%</div>
+          <div style="padding-top: 18px; padding-bottom: 5px; padding-left: 12px;">  <round-progress
+    [current]="slaAchieved"
+    [max]="100"
+    [color]="ColorCode()"
+    [background]="'#eaeaea'"
+    [radius]="45"
+    [stroke]="6"
+    [semicircle]="false"
+    [rounded]="false"
+    [clockwise]="true"
+    [responsive]="false"
+    [duration]="4000"
+    [animation]="'easeInOutQuart'"
+    [animationDelay]="2"></round-progress> </div>
+
+
+    <mdl-card_text-goal style="bottom: 0" align="justify">
+    GOAL - {{slaGoal}}%
+</mdl-card_text-goal>
+

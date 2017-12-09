@@ -1,0 +1,196 @@
+<!--LineChart-First Pass Claims-->
+
+<div class="card-box card">
+    <div class="card-block">
+        <div class="row">
+        </div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--8-col">
+   <h4 class="text-dark  header-title m-t-0 m-b-30">First Pass Rates</h4> </div>
+<div class="mdl-cell mdl-cell--4-col">
+     <mdl-switch mdl-ripple style="color: #fff" [(ngModel)]='showCombined'>Toggle to Combined view </mdl-switch>
+                <!--<button *ngIf="!showCombined" (click)="chartDownload('card-chart2','First Pass Rate Chart')"mdl-button mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 15rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left">
+                  <mdl-icon>file_download</mdl-icon>
+                </button>
+                <button *ngIf="showCombined" (click)="chartDownload('combined','First Pass Rate Chart')"mdl-button mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 15rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left">
+                    <mdl-icon>file_download</mdl-icon>
+                </button>-->
+
+                <button *ngIf="!showCombined" mdl-button #btn2="mdlButton" (click)="m2.toggle($event, btn2)" mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 15rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left"><mdl-icon>file_download</mdl-icon></button>
+                    <mdl-menu #m2="mdlMenu" mdl-menu-position="bottom-right">
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('card-chart2','First Pass Rate Chart','.jpg')">Download as JPEG</mdl-menu-item>
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('card-chart2','First Pass Rate Chart','.png')">Download as PNG</mdl-menu-item>
+                    </mdl-menu>
+
+                <button *ngIf="showCombined" mdl-button #btn2="mdlButton" (click)="m2.toggle($event, btn2)" mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 15rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left"><mdl-icon>file_download</mdl-icon></button>
+                    <mdl-menu #m2="mdlMenu" mdl-menu-position="bottom-right">
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('combined','First Pass Rate Chart','.jpg')">Download as JPEG</mdl-menu-item>
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('combined','First Pass Rate Chart','.png')">Download as PNG</mdl-menu-item>
+                    </mdl-menu>
+
+
+
+   </div></div>
+
+<!--
+  <h4 class="text-dark  header-title m-t-0 m-b-30">First Pass Rates <input type="checkbox" id="velu" style="text-transform: capitalize; margin-top:5px" (change)='toggleCombined(velu)'>
+    Combined
+  </input> </h4>-->
+      
+ 
+
+
+        <div class=" widget-simple-chart text-right card-box chart-wrapper" style="height:300px;margin-top:40px;">
+            <canvas id="card-chart2" class="chart" height="300" [hidden]="showCombined" ></canvas>
+            <canvas id="combined" class="chart" height="300" [hidden]="!showCombined" ></canvas>
+        </div>
+
+    </div> 
+    <div class="card-footer card-box card">
+        <ul>
+            <li>
+                <div class="text-muted">IND</div>
+                <strong>29.703 Members (40%)</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div class="text-muted">Med Supp</div>
+                <strong>22.123 Members (80%)</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div class="text-muted">SF</div>
+                <strong>40.15%</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div class="text-muted">Combined</div>
+                <strong>40.15%</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--<div class="card-box card">
+    <div class="card-block">
+        <div class="row">
+        </div>
+
+        <h4 class="text-dark  header-title m-t-0 m-b-30">First Pass Rates</h4>
+
+        <div class=" widget-simple-chart text-right card-box chart-wrapper" style="height:300px;margin-top:40px;">
+            <canvas id="combined1" class="chart" height="300"></canvas>
+        </div>
+
+    </div>
+    <div class="card-footer card-box card">
+        <ul>
+            <li>
+                <div class="text-muted">IND</div>
+                <strong>29.703 Members (40%)</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div class="text-muted">Med Supp</div>
+                <strong>22.123 Members (80%)</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div class="text-muted">SF</div>
+                <strong>40.15%</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="hidden-sm-down">
+                <div>Combined</div>
+                <strong>40.15%</strong>
+                <div class="progress progress-xs mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>-->
+
+
+
+<div class="card-box card" mdl-shadow="8">
+  <div class="card-block">
+    <div class="row">
+    </div>
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--8-col">
+              <h4 class="text-dark  header-title m-t-0 m-b-30">Claim First Rate by LOB</h4>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+                <!--<button (click)="chartDownload('claim-main-chart','Claim First Rate by LOB')" mdl-button mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 15rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left">
+                  <mdl-icon>file_download</mdl-icon>
+                </button>-->
+                <button mdl-button #btn1="mdlButton" (click)="m1.toggle($event, btn1)" mdl-button-type="mini-fab" mdl-colored="primary" style="margin-left: 18.5rem;" mdl-ripple mdl-tooltip="Download as Image" mdl-tooltip-position="left"><mdl-icon>file_download</mdl-icon></button>
+                    <mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-right">
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('claim-main-chart','Claim First Rate by LOB','.jpg')">Download as JPEG</mdl-menu-item>
+                    <mdl-menu-item mdl-ripple (click)="chartDownload('claim-main-chart','Claim First Rate by LOB','.png')">Download as PNG</mdl-menu-item>
+                    </mdl-menu>
+         </div>
+    </div>
+
+    <div class=" widget-simple-chart text-right card-box chart-wrapper" style="height:300px;margin-top:40px;">
+      <canvas id="claim-main-chart" class="chart" height="300"></canvas>
+    </div>
+  </div>
+  <div class="card-footer card-box card">
+    <ul>
+      <li>
+        <div class="text-muted">Large Group</div>
+        <strong>29.703 Members (40%)</strong>
+        <div class="progress progress-xs mt-2">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+      <li class="hidden-sm-down">
+        <div class="text-muted">Small Group</div>
+        <strong>24.093 Members (20%)</strong>
+        <div class="progress progress-xs mt-2">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+      <li>
+        <div class="text-muted">MedSupp</div>
+        <strong>78.706 Members (60%)</strong>
+        <div class="progress progress-xs mt-2">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+      <li class="hidden-sm-down">
+        <div class="text-muted">Individual Off Exchange</div>
+        <strong>22.123 Members (80%)</strong>
+        <div class="progress progress-xs mt-2">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+      <li class="hidden-sm-down">
+        <div class="text-muted">Individual On Exchange</div>
+        <strong>40.15%</strong>
+        <div class="progress progress-xs mt-2">
+          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
